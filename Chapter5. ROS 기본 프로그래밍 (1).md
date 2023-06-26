@@ -31,5 +31,5 @@ x:forward
 y:left   
 z:up  
 #### ROS의 프로그래밍 규칙
-<img src="https://github.com/riseacademy/ROS-Study/assets/137777776/4ba38821-8aef-41ce-b76f-b5bbdeb759d6" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="rprogrammingules"></img>
+<img src="https://github.com/riseacademy/ROS-Study/assets/137777776/4ba38821-8aef-41ce-b76f-b5bbdeb759d6" width="70%" height="50%" title="px(픽셀) 크기 설정" alt="rprogrammingules"></img>   
 ROS C++ Style Guide에서 자세한 사항을 볼 수 있다.
