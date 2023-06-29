@@ -20,8 +20,12 @@
 3) Message : 메시지를 통해 노드간의 데이터를 주고받게 된다.
 메시지는 변수 형태(integer, floating point, boolean 등)
 4) Topic, Publisher, Subscriber
+   ![image](https://github.com/riseacademy/ROS-Study/assets/91440336/283771e7-17f6-48d6-adf5-c75229431876)
 5) Service, Service server, Service client
+   ![image](https://github.com/riseacademy/ROS-Study/assets/91440336/328f9605-c6ea-47d3-968c-cf27f1587580)
+
 6) Action, Action server, Action client
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/df0a00d3-990e-4033-9148-b9f58e7acf35)
 
 ### 2. 메시지 통신
 1) 마스터 구동 :XMLRPC(XML-Remote Procedure Call)
