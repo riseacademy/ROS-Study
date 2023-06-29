@@ -63,3 +63,5 @@ TCPROS를 이용하여 Subscriber node가 Publisher node와 직접 연결
 ### 6. 클라이언트 라이브러리
 
 ### 7. 이기종 디바이스 간의 통신
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/23204e51-49f7-4894-b93c-dd2b410b6e8a)
+
