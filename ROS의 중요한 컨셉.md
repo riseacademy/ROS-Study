@@ -19,8 +19,10 @@
 2) Package : 하나 이상의 노드, 노드 실행을 위한 정보 등을 묶어 놓은 것
 3) Message : 메시지를 통해 노드간의 데이터를 주고받게 된다.
 메시지는 변수 형태(integer, floating point, boolean 등)
+
 4) Topic, Publisher, Subscriber
    ![image](https://github.com/riseacademy/ROS-Study/assets/91440336/283771e7-17f6-48d6-adf5-c75229431876)
+   
 5) Service, Service server, Service client
    ![image](https://github.com/riseacademy/ROS-Study/assets/91440336/328f9605-c6ea-47d3-968c-cf27f1587580)
 
