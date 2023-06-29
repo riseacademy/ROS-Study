@@ -54,7 +54,3 @@
 ##### 4) Gazebo
   * 물리 엔진을 탑재, 로봇, 센서, 환경 모델 등을 지원, 3차원 시뮬레이터.
   * ROS와의 높은 호환성.
-
-## ch3. ROS 개발환경 구축
-### ROS 한줄 설치
-<$ wget gttps://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh>
