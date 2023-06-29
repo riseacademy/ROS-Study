@@ -2,7 +2,10 @@
 ROS에 대해 공부합니다.
 
 ### ✔ 참고자료
-ROBOTIS ROS 강의 https://youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw
+- ROBOTIS ROS 강의
+> https://youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw
+- 참고 레포지토리
+> https://github.com/ROBOTIS-GIT/ros_tutorials
 
 ### ✔ 목차
 
