@@ -6,7 +6,7 @@
 ### 목차
 1. ROS 용어 정리
 2. 메시지 통신 (주요)
-3. 메시지 (주요)
+3. 메시지
 4. 네임
 5. 좌표 변환(TF)
 
@@ -38,34 +38,62 @@
 ```
 $roscore
 ```
-roscore는 기본 실행 명령어로써 package에서 하나의 노드를 실행하는데 사용된다. 
+roscore는 기본 실행 명령어로써 package에서 하나의 노드를 실행하는데 사용된다. 노드의 개수에 상관없이 실행되는 각 노드들의 정보들을 관리하여 노드간의 통신을 연결시키는 역할을 한다. 
+
 2) 서브스크라이버 노드 구동
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/8f1ccbc8-b375-4403-9fbb-130e7117735a)
+
 ```
 $roscore 패키지이름 노드이름
 ```
+노드의 이름, 전송할 topic의 이름, 전송할 message의 형태, 노드의 IP, port의 번호 등을 master에게 전달한다. 
+
 3) 퍼블리셔 노드 구동
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/43f2c8dc-292d-406d-93e8-36c3d1e08ca9)
+
 ```
 $rosrun 패키지이름 노드이름
 ```
+
 4) 퍼블리셔 정보 알림
-마스터는 서브스크라이버 노드에게 새로운 퍼블리셔 정보를 알린다.
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/4c9d1e68-9bae-4a09-b348-9b095cf41e89)
+
+마스터는 서브스크라이버 노드에게 새로운 퍼블리셔 정보를 전달한다.
+
 5) 퍼블리셔 노드에 접속 요청
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/2e6018ca-a3d7-4e66-917d-f24fcd85c362)
+
 마스터로부터 받은 퍼블리셔 정보를 이용하여 TCPROS 접속을 요청
 6) 서브스크라이버 노드에 접속 응답
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/d32907ec-778d-4f6f-9d3b-4cb6e8a70366)
+
 접속 응답에 해당되는 자신의 TCP URI 주소와 Port 번호 전송
 7) TCP 접속
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/1a8ab236-d9d4-419a-ab40-0d65d213621d)
+
 TCPROS를 이용하여 Subscriber node가 Publisher node와 직접 연결
 8) 메시지 전송
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/c55c215f-7fdc-4b39-be28-981902e91060)
+
 발행자 노드는 서브스크라이버 노드에게 메시지를 전송(토픽)
 9) 서비스 요청 및 응답
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/4b4b64cc-8fa7-4b24-9f3e-a4dcfd97e031)
+
 1회에 한해 접속, 서비스 요청 및 서비스 응답이 수행된 후 서로간의 접속을 끊는다.
 
 ---
 
 ### 3. 메시지
 
-
-
+```
+$rosrun turtlesim turtlesim_node
+```
+rosrun은 노드 하나를 실행시킬 때 사용된다.
+<br/>
+위의 코드는 turtlesim이라는 package 안에 있는 turtlesim node를 실행시키라는 코드이다. 
+![image](https://github.com/riseacademy/ROS-Study/assets/91440336/d66cb599-e6ed-46b1-806a-704539ef1b85)
+<br/>
+Parameter은 그로벌 변수를 네트워크에 지정한 후에 외부에서 변경시키고 다른 노드에서 받아서 process를 바꿀 수 있다.
 
 
 
